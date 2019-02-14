@@ -16,7 +16,10 @@
 package org.pac4j.oauth.client;
 
 import org.pac4j.core.context.WebContext;
+import org.pac4j.core.exception.HttpAction;
+import org.pac4j.core.redirect.RedirectAction;
 import org.pac4j.core.util.CommonHelper;
+import org.pac4j.oauth.credentials.OAuthCredentials;
 import org.pac4j.oauth.profile.JsonHelper;
 import org.pac4j.oauth.profile.OAuthAttributesDefinitions;
 import org.pac4j.oauth.profile.twitter.TwitterProfile;
@@ -107,7 +110,7 @@ public class TwitterClient extends BaseOAuth10Client<TwitterProfile> {
         final TwitterProfile profile = new TwitterProfile();
         final JsonNode json = JsonHelper.getFirstNode(body);
         if (json != null) {
-            profile.setId(JsonHelper.get(json, "id"));
+            profile.setId(JsonHelper.get(json, "id").toString());
             for (final String attribute : OAuthAttributesDefinitions.twitterDefinition.getAllAttributes()) {
                 profile.addAttribute(attribute, JsonHelper.get(json, attribute));
             }
@@ -121,5 +124,20 @@ public class TwitterClient extends BaseOAuth10Client<TwitterProfile> {
     
     public void setAlwaysConfirmAuthorization(final boolean alwaysConfirmAuthorization) {
         this.alwaysConfirmAuthorization = alwaysConfirmAuthorization;
+    }
+
+    @Override
+    public HttpAction redirect(WebContext webContext) {
+        return null;
+    }
+
+    @Override
+    public OAuthCredentials getCredentials(WebContext webContext) {
+        return null;
+    }
+
+    @Override
+    public RedirectAction getLogoutAction(WebContext webContext, TwitterProfile twitterProfile, String s) {
+        return null;
     }
 }

@@ -1,5 +1,6 @@
 package au.org.ala.cas.facebook;
 
+
 import org.scribe.builder.api.StateApi20;
 import org.scribe.extractors.AccessTokenExtractor;
 import org.scribe.model.OAuthConfig;

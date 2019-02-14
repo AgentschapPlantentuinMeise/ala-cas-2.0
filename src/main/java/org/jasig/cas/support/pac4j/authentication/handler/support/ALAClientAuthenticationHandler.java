@@ -37,6 +37,7 @@ import org.pac4j.core.client.Client;
 import org.pac4j.core.client.Clients;
 import org.pac4j.core.context.J2EContext;
 import org.pac4j.core.context.WebContext;
+import org.pac4j.core.profile.CommonProfile;
 import org.pac4j.core.profile.UserProfile;
 import org.springframework.webflow.context.ExternalContextHolder;
 import org.springframework.webflow.context.servlet.ServletExternalContext;
@@ -83,6 +84,7 @@ public final class ALAClientAuthenticationHandler extends AbstractAuthentication
     public ALAClientAuthenticationHandler(final Clients theClients,
 					  final PrincipalResolver principalResolver,
 					  final UserCreator userCreator) {
+
         this.clients = theClients;
 	this.principalResolver = principalResolver;
 	this.userCreator = userCreator;
@@ -102,7 +104,8 @@ public final class ALAClientAuthenticationHandler extends AbstractAuthentication
         logger.debug("clientName : {}", clientName);
 
         // get client
-        final Client<org.pac4j.core.credentials.Credentials, UserProfile> client = this.clients.findClient(clientName);
+        //final Client<org.pac4j.core.credentials.Credentials, UserProfile> client = this.clients.findClient(clientName);
+		final Client<org.pac4j.core.credentials.Credentials, CommonProfile> client = this.clients.findClient(clientName);
         logger.debug("client : {}", client);
 
 	// web context

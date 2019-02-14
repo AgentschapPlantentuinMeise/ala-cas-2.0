@@ -1,0 +1,8 @@
+package org.pac4j.core.client;
+
+public enum Mechanism
+{
+    OAUTH_PROTOCOL,  CAS_PROTOCOL,  OPENID_PROTOCOL,  FORM_MECHANISM,  BASICAUTH_MECHANISM,  SAML_PROTOCOL,  JANRAIN_MECHANISM,  GAE_MECHANISM,  OPENID_CONNECT_PROTOCOL;
+
+    private Mechanism() {}
+}

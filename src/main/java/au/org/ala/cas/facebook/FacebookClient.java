@@ -12,6 +12,7 @@ import org.scribe.oauth.StateOAuth20ServiceImpl;
  */
 public class FacebookClient extends org.pac4j.oauth.client.FacebookClient {
 
+    /*
     @Override
     protected void internalInit() {
         super.internalInit();
@@ -31,5 +32,6 @@ public class FacebookClient extends org.pac4j.oauth.client.FacebookClient {
                     this.proxyPort);
         }
     }
+    */
 
 }
