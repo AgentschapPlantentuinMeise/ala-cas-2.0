@@ -72,23 +72,23 @@
     <div class="row footer-bonus">
       <div class="col-md-4 col-sm-12 footer-bonus-item">
         <h5 class="footer-bonus-heading">Explore the Spatial Portal</h5>
-        <a href="https://spatial.ala.org.au/" title="Spatial portal" class="footer-bonus-link">
+        <!--a href="https://spatial.ala.org.au/" title="Spatial portal" class="footer-bonus-link">
           <img class="img-responsive" src="https://www.ala.org.au/commonui-bs3-v2/commonui-bs3/img/footer-bonus-spatial-portal-icon.png" alt="Spatial Portal icon">
-        </a>
+        </a-->
         <p class="footer-bonus-description"><a href="https://spatial.ala.org.au/">Explore species occurrence records</a> in the context of their environment. Find records and model species distributions. Export reports, maps and data.</p>
       </div>
       <div class="col-md-4 col-sm-12 footer-bonus-item">
         <h5 class="footer-bonus-heading">Join a Citizen Science Project</h5>
-        <a href="https://biocollect.ala.org.au/" title="Contribute your sightings" class="footer-bonus-link">
+        <!--a href="https://biocollect.ala.org.au/" title="Contribute your sightings" class="footer-bonus-link">
           <img class="img-responsive" src="https://www.ala.org.au/commonui-bs3-v2/commonui-bs3/img/footer-bonus-cit-science-icon.png" alt="Citizen Science icon">
-        </a>
+        </a-->
         <p class="footer-bonus-description">Find out how you can <a href="https://biocollect.ala.org.au/">contribute to a citizen science project</a> in your area, or explore one of the many citizen science projects supported by the ALA.</p>
       </div>
       <div class="col-md-4 col-sm-12 footer-bonus-item">
         <h5 class="footer-bonus-heading">Record a sighting</h5>
-        <a href="https://sightings.ala.org.au/" title="Did you see something?" class="footer-bonus-link">
+        <!--a href="https://sightings.ala.org.au/" title="Did you see something?" class="footer-bonus-link">
           <img class="img-responsive" src="https://www.ala.org.au/commonui-bs3-v2/commonui-bs3/img/footer-bonus-record-sighting-icon.png" alt="Sightings icon">
-        </a>
+        </a-->
         <p class="footer-bonus-description">Did you see something? Photograph something? <a href="https://sightings.ala.org.au/">Contribute your sighting</a> to the Atlas of Living Australia.</p>
       </div>
 
