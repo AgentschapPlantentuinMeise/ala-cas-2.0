@@ -7,3 +7,5 @@ target/*
 .classpath
 
 overlays/
+pac4j-oauth/target/
+ala-cas-main/target/
